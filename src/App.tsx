@@ -11,13 +11,13 @@ import Login from "./components/login"
 import Wishlist from "./components/wishlist"
 import Cart from "./components/cart"
 import Footer from "./components/footer";
+import Blog1 from "./components/blogs/blog1";
 
 
 function App() {
   return (
     <Router>
        <div className="App">
-      
           <Navbar/>
           <Routes>
             <Route path="/" element= {<Home/>}/>
@@ -29,6 +29,7 @@ function App() {
             <Route path="/login" element= {<Login/>}/>
             <Route path="/wishlist" element= {<Wishlist/>}/>
             <Route path="/cart" element= {<Cart/>}/> 
+            <Route path="/blog1" element={<Blog1/>}/>
         </Routes>
         <Footer/>
           
