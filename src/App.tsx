@@ -1,17 +1,21 @@
-import Navbar from "./navbar/Navbar";
+import Navbar from "./components/navabr/Navbar";
 import {BrowserRouter as Router} from "react-router-dom"
 import {Routes, Route} from "react-router-dom"
-import Home from "./components/home";
-import Pages from "./components/pages"
-import Shop from "./components/shop"
-import Product from "./components/product"
-import Blog from "./components/blog"
-import Contact from "./components/contact"
-import Login from "./components/login"
-import Wishlist from "./components/wishlist"
-import Cart from "./components/cart"
-import Footer from "./components/footer";
-import Blog1 from "./components/blogs/blog1";
+import Home from "./Pages/home";
+import Pages from "./Pages/pages"
+import Shop from "./Pages/shop"
+import Product from "./Pages/product"
+import Blog from "./Pages/blog"
+import Contact from "./Pages/contact"
+import Login from "./Pages/login"
+import Wishlist from "./Pages/wishlist"
+import Cart from "./Pages/cart"
+import Footer from "./Pages/footer";
+import Blog1 from "./Pages/blogs/blog1";
+import Register from "./Pages/register";
+import Team from "./Pages/team";
+import About from "./Pages/about";
+
 
 
 function App() {
@@ -30,6 +34,9 @@ function App() {
             <Route path="/wishlist" element= {<Wishlist/>}/>
             <Route path="/cart" element= {<Cart/>}/> 
             <Route path="/blog1" element={<Blog1/>}/>
+            <Route path ="/about" element={<About/>}/>
+            <Route path="/team" element={<Team/>}/>
+            <Route path="/register" element={<Register/>}/>
         </Routes>
         <Footer/>
           

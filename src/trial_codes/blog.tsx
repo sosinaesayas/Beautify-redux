@@ -32,12 +32,7 @@ const Blog = () => {
           <div className='blog-body'>
             <Link className='image11' to="/blog1"> <img className='image1' src={image1} alt=''/></Link>
           </div>
-          {/* <div>
-            <FaUser size={20} style={{color:'gray'}}/>
-            <p>Beautify Admin</p>
-            <FaClock size={20} style={{color:'gray'}}/>
-          </div> */}
-        {/* </div> */}
+         
         
         <div className='blog-body'>
           <Link className='image11' to="/blog1"> <img className='image1' src={image1} alt=''/></Link>
