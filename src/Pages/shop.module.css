@@ -1,0 +1,114 @@
+.sortingContainer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 40px;
+margin-bottom: 10px;
+
+}
+.sorting{
+    display: flex;
+    align-items: center;
+}
+.sortingP{
+    font-size: 20px;
+    font-weight: 120px;
+    padding: 0;
+    margin: 0;
+}
+.buttonContainer{
+    display: flex;
+}
+.buttonContainer button{
+    margin-left: 20px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 17px;
+    width: max-content;
+    padding: 2px 9px;
+    /* padding: 8px; */
+}
+.catagoryButton{
+    color: black;
+    background-color: white;
+}
+.catagoryButton:hover{
+    background-color: rgb(245, 245, 245);
+}
+.activeButton{
+    background-color: rgb(214, 214, 214)
+}
+.searchKeywordContainer{
+    position: relative;
+    margin-right: 70px;
+}
+.searchKeyword{
+    margin-right: 30px;
+    width: 300px;
+    height: 35px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 17px;
+}
+.searchIcon{
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    
+}
+.imagesContainer{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.images{
+    margin: 15px;
+    width: 300px;
+    height: auto;
+}
+.imageContainer{
+    position: relative;
+}
+.imageContainer:hover .hoverButton {
+    opacity: 1;
+}
+.imageContainer:hover .hoverButton1{
+    opacity: 1;
+}
+.hoverButton1{
+    position: absolute;
+    top: 25px;
+    right: 65px;
+    opacity: 0;
+}
+.iconButton{
+    border: 1px solid rgb(255, 252, 252);
+    margin-left: 5px;
+    box-shadow: 1px white;
+    background-color: white;
+}
+#heartStyle{
+    color: gray ;
+}
+#eyeStyle{
+    color: gray;
+}
+.hoverButton{
+    position: absolute;
+    bottom: 25px;
+    left: 18%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.hoverButton:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.cartButton{
+    border: 1px solid rgb(255, 252, 252);
+    box-shadow: 1px white;
+    width: 200px;
+    background-color: white;
+
+}

@@ -34,7 +34,7 @@ const  Navbar = () => {
                   <Link className={active === 'home' ? 'Active' : '' }
                    onClick={()=>handleChange('home')} 
                    to="/">Home</Link>
-                </li>
+                 </li>
                 <li onMouseEnter={handleMouseInter} onMouseLeave={handleMouseLeave}>
                  <Link id='pages' className={active === 'pages' ? 'Active' : '' } 
                    onClick={()=>handleChange('pages')}
@@ -64,11 +64,7 @@ const  Navbar = () => {
                   onClick={()=>handleChange('shop')}
                    to="/shop">Shop</Link>
                 </li>
-                <li>
-                  <Link className={active==='product'? 'Active': ''}
-                   onClick={()=>{handleChange('product')}}
-                   to="/product">Product</Link>
-                  </li>
+          
                 <li>
                   <Link className={active === "blog"? 'Active': ""}
                   onClick={()=>handleChange('blog')}
