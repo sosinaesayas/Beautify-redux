@@ -11,9 +11,11 @@ import Wishlist from "./Pages/wishlist"
 import Cart from "./Pages/cart"
 import Footer from "./Pages/footer";
 import Blog1 from "./Pages/blogs/blog1";
-import Register from "./Pages/register";
+
 import Team from "./Pages/team";
 import About from "./Pages/about";
+import Signup from "./Pages/signup";
+
 
 
 
@@ -34,7 +36,7 @@ function App() {
             <Route path="/blog1" element={<Blog1/>}/>
             <Route path ="/about" element={<About/>}/>
             <Route path="/team" element={<Team/>}/>
-            <Route path="/register" element={<Register/>}/>
+            <Route path="/signup" element={<Signup/>}/>
         </Routes>
         <Footer/>
           

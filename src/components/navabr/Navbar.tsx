@@ -2,8 +2,6 @@ import React from 'react';
 import { Link} from "react-router-dom";
 import { useState } from 'react';
 import "./Navbar.css";
-// import { FaChevronDown } from 'react-icons/fa';
-// import { FaAngleDown } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
 
 
@@ -48,9 +46,6 @@ const  Navbar = () => {
                        <li><Link className={dropdownactive === "team"? 'dropdownActive': ""}
                         onClick={()=>chnageHandler('team')}
                         to='team'>Team</Link></li>
-                       <li><Link className={dropdownactive === "register"? 'dropdownActive': ""}
-                      onClick={()=>chnageHandler('register')} 
-                       to="register">Register</Link></li>
                       <li><Link className={dropdownactive === "login"? 'dropdownActive': ""}
                       onClick={()=>chnageHandler('login')} 
                        to='login'>Login</Link></li>
