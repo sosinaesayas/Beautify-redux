@@ -18,6 +18,10 @@ const  Navbar = () => {
   const [isdropdownopen, setIsdropdownopen] = useState(false);
   const handleMouseInter = () =>{setIsdropdownopen(true)}
   const handleMouseLeave = ()=>{setIsdropdownopen(false)}
+
+  const [isdropdownopenforpages, setIsdropdownopenforpages] = useState(false);
+  const handleMouseInterforpages = () =>{setIsdropdownopenforpages(true)}
+  const handleMouseLeaveforpages = ()=>{setIsdropdownopenforpages(false)}
   return (
     <div className='header'>
       <div className='Navbar'>
@@ -33,12 +37,13 @@ const  Navbar = () => {
                    onClick={()=>handleChange('home')} 
                    to="/">Home</Link>
                  </li>
-                <li onMouseEnter={handleMouseInter} onMouseLeave={handleMouseLeave}>
+
+                 <li onMouseEnter={handleMouseInterforpages} onMouseLeave={handleMouseLeaveforpages}>
                  <Link id='pages' className={active === 'pages' ? 'Active' : '' } 
                    onClick={()=>handleChange('pages')}
                   to="/pages">Pages
                   <IoIosArrowDown className='dropdown-icon'/>
-                  {isdropdownopen && 
+                  {isdropdownopenforpages && 
                     <ul className='dropdown-list'>
                        <li><Link className={dropdownactive === "about"? 'dropdownActive': ""}
                         onClick={()=>chnageHandler('about')}
@@ -54,10 +59,26 @@ const  Navbar = () => {
                   }
                   </Link>
                   </li>
-                <li>
+                
+                <li onMouseEnter={handleMouseInter} onMouseLeave={handleMouseLeave}>
                   <Link className={active==='shop'? 'Active' : ''} 
                   onClick={()=>handleChange('shop')}
-                   to="/shop">Shop</Link>
+                   to="/shop">Shop
+                   <IoIosArrowDown className='dropdown-icon'/>
+                  {isdropdownopen && 
+                    <ul className='dropdown-list'>
+                       <li><Link className={dropdownactive === "cart"? 'dropdownActive': ""}
+                        onClick={()=>chnageHandler('cart')}
+                         to="cart">Cart</Link></li>
+                       <li><Link className={dropdownactive === "wishlist"? 'dropdownActive': ""}
+                        onClick={()=>chnageHandler('wishlist')}
+                        to='wishlist'>Wishlist</Link></li>
+                      <li><Link className={dropdownactive === "checkout"? 'dropdownActive': ""}
+                      onClick={()=>chnageHandler('checkout')} 
+                       to='checkout'>Checkout</Link></li>
+                    </ul>
+                  }
+                   </Link>
                 </li>
           
                 <li>
@@ -65,6 +86,7 @@ const  Navbar = () => {
                   onClick={()=>handleChange('blog')}
                   to="/blog">Blog</Link>
                   </li>
+
                 <li><Link className={active==="contact"? 'Active' : ""}
                 onClick={()=>handleChange('contact')}
                 to="/contact">Contact</Link>

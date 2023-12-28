@@ -1,29 +1,15 @@
 import React, { useState } from 'react'
 import styles from "./shop.module.css"
 import { AiOutlineSearch } from 'react-icons/ai'
-
 import { FaHeart } from 'react-icons/fa'
 import { FaEye } from 'react-icons/fa'
 import general1 from "../assets/general1.jpg"
-// import general2 from "../assets/general2.jpg"
 import general3 from "../assets/general3.jpg"
 import general4 from "../assets/general4.jpg"
 import general5 from "../assets/general5.jpg"
-// import general6 from "../assets/general6.jpg"
-// import general7 from "../assets/general7.jpg"
-// import general8 from "../assets/general8.jpg"
 import general9 from "../assets/general9.jpg"
 import general10 from "../assets/general10.jpg"
-// import general11 from "../assets/general11.jpg"
-// import general12 from "../assets/general12.jpg"
-// import general13 from "../assets/general13.jpg"
-// import general14 from "../assets/general14.jpg"
-// import general15 from "../assets/general15.jpg"
-// import general16 from "../assets/general16.jpg"
-// import general17 from "../assets/general18.jpg"
-// import general18 from "../assets/general18.jpg"
-// import general19 from "../assets/general19.jpg"
-// import general20 from "../assets/general20.jpg"
+import { Link } from 'react-router-dom'
 
 
 
@@ -57,8 +43,9 @@ const Shop = () => {
 
 
         <div className={styles.imagesContainer}>
-          <div className={styles.imageContainer}>
-            <img className={styles.images} src={general1} alt="cosmetics" />
+        <div className={styles.imageContainer}>
+           {/* <Link className='imageLink' to="/products"></Link> */}
+           <img className={styles.images} src={general1} alt="cosmetics" />
             <div className={styles.hoverButton1}>
               <button className={styles.iconButton}><FaHeart id='heart-style' /></button>
               <button className={styles.iconButton}><FaEye id='eye-style'/></button>

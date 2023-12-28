@@ -11,31 +11,36 @@ margin-bottom: 10px;
     align-items: center;
 }
 .sortingP{
+    margin-left: 20px;
     font-size: 20px;
     font-weight: 120px;
     padding: 0;
     margin: 0;
+}
+.pContainer{
+    margin-left: 20px;
 }
 .buttonContainer{
     display: flex;
 }
 .buttonContainer button{
     margin-left: 20px;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 17px;
+    border: 2px solid rgb(59, 92, 176);
+    border-radius: 26px;
     width: max-content;
-    padding: 2px 9px;
-    /* padding: 8px; */
+    padding: 6px 16px;
 }
-.catagoryButton{
+:global .catagoryButton{
+    font-size: larger;
     color: black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 .catagoryButton:hover{
     background-color: rgb(245, 245, 245);
 }
-.activeButton{
-    background-color: rgb(214, 214, 214)
+:global .activeButton{
+    background-color: rgb(255, 218, 250);
+    font-size: larger;
 }
 .searchKeywordContainer{
     position: relative;
@@ -68,6 +73,10 @@ margin-bottom: 10px;
 }
 .imageContainer{
     position: relative;
+}
+.imageContainer:hover{
+    transform: scale(1.07);
+    transition: 0.9s;
 }
 .imageContainer:hover .hoverButton {
     opacity: 1;
@@ -110,5 +119,14 @@ margin-bottom: 10px;
     box-shadow: 1px white;
     width: 200px;
     background-color: white;
-
 }
+/* .imageLink{
+    width: fit-content;
+    text-decoration: none!important;
+    background-color: none!important;
+}
+.imageLink:hover,
+.imageLink img:hover{
+    text-decoration: none;
+    background-color: none;
+} */

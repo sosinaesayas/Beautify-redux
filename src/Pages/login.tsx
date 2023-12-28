@@ -13,7 +13,7 @@ const Login = () => {
               <input className={styles.inputs} type="text" placeholder='Password' />
           </div>
           <div className={styles.checkbox}>
-            <input type="checkbox" />
+            <input className='checkbox-input' type="checkbox" />
             <p className={styles.checkboxP}>Remember me</p>
           </div>
          <button type="submit" className={styles.btnn}>Submit</button>

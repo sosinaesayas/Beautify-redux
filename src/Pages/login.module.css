@@ -33,9 +33,12 @@
     border: 1px solid rgb(200, 200, 200);
     border-radius: 10px;
     background-color: rgb(232, 232, 232);
+    font-size: x-large;
 }
 .btnn:hover{
-background-color: rgb(198, 198, 198);
+background-color: rgb(255, 255, 255);
+transform: scale(1.04);
+transition: 0.5s;
 }
 .signup{
     display: flex;

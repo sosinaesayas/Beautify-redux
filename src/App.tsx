@@ -11,10 +11,11 @@ import Wishlist from "./Pages/wishlist"
 import Cart from "./Pages/cart"
 import Footer from "./Pages/footer";
 import Blog1 from "./Pages/blogs/blog1";
-
 import Team from "./Pages/team";
 import About from "./Pages/about";
 import Signup from "./Pages/signup";
+import Checkout from "./Pages/checkout";
+import Product from "./Pages/product";
 
 
 
@@ -37,12 +38,11 @@ function App() {
             <Route path ="/about" element={<About/>}/>
             <Route path="/team" element={<Team/>}/>
             <Route path="/signup" element={<Signup/>}/>
+            <Route path="/checkout" element={<Checkout/>}/>
+            <Route path="/product" element={<Product/>}/>
+           
         </Routes>
         <Footer/>
-          
-     
-      
-     
     </div>
     </Router>
   );
